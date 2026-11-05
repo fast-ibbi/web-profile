@@ -3,16 +3,23 @@
 /* ---------- Dasar halaman ---------- */
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+  font-family: 'Inter','Segoe UI', Tahoma, Verdana, sans-serif;
   color: #334155;
   background-color: #F8FAFC;
   line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ---------- Heading ---------- */
 h1,
 h2,
 h3 {
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Verdana, san-serif;
   color: #1E293B;
   line-height: 1.25;
   margin: 0 0 16px;
@@ -153,6 +160,11 @@ th {
   border: 1px solid #E2E8F0;
 }
 
+.badge-unggulan {
+  color: #1E293B;
+  background-color: orange;
+}
+
 .badge-selesai {
   color: #FFFFFF;
   background-color: #15803D;
@@ -196,3 +208,50 @@ th {
    #kontak            (1, 0, 0)  menang atas  .kontak  (0, 1, 0)
    Bila dua aturan sama kuat, yang ditulis paling akhir yang menang.
 */
+
+.proyek-card {
+  position: relative;
+  max-width: 420px;
+  margin: 0 auto 24px;
+  padding: 0;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px #E2E8F0;
+  overflow: hidden;
+}
+
+.proyek-card .badge {
+  top: 12px;
+  left: 12px;
+  position: absolute;
+}
+
+.proyek-card img {
+  width: 100%;
+}
+
+.proyek-body {
+  padding: 24px;
+}
+
+.proyek-nama {
+  font-size: 1.25rem;
+  margin: 0 0 8px;
+}
+
+.proyek-kategori {
+  margin: 0 0 8px;
+  color: #64748B;
+  font-size: 0.875rem;
+}
+
+.proyek-meta {
+  border-top: 1px solid #E2E8F0;
+  padding-top: 24px;
+  font-size: 0.875rem;
+}
+
+.proyek-meta a {
+  font-weight: 600;
+}
